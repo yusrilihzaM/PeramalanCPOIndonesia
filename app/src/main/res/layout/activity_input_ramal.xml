@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.des.InputRamalActivity">
+
+    <ImageView
+        android:id="@+id/bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:contentDescription="@string/bg_page"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_tahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16"
+        android:fontFamily="@font/poppins"
+        android:text="@string/jumlah_bulan_periode_kedepan"
+        android:textColor="@color/hitam_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/edt_bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16"
+        android:background="@drawable/bg_edt"
+        android:hint="@string/masukan_jumlah_bulan"
+        android:inputType="number"
+        android:padding="@dimen/size_16"
+        android:textColor="@color/hitam_500"
+        android:textColorHighlight="@color/hitam_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tahun"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16"
+        android:backgroundTint="@color/green_200"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        android:padding="@dimen/size_12"
+        android:radius="10dp"
+        android:text="@string/mulai_meramal"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_bulan"
+        app:layout_constraintVertical_bias="0.889" />
+</androidx.constraintlayout.widget.ConstraintLayout>

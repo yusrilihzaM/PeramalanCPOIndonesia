@@ -1,0 +1,40 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_alpha"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="@dimen/size_8"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16">
+
+        <ImageView
+            android:id="@+id/ic_menu"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_alpha"
+            android:layout_margin="@dimen/size_4"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/ic_alpha" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/dummy_title"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/size_16"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toEndOf="@+id/ic_menu"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.487" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

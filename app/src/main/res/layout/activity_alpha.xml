@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.alpha.AlphaActivity">
+
+    <ImageView
+        android:id="@+id/bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:contentDescription="@string/bg_page"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_sekarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/sekarang"
+        android:textColor="@color/hitam_200"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_alpha"
+        app:layout_constraintStart_toStartOf="@+id/tv_alpha"
+        app:layout_constraintTop_toTopOf="@+id/tv_alpha" />
+
+    <TextView
+        android:id="@+id/tv_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/dummy_alpha"
+        android:textColor="@color/hitam_200"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/nilai_parameter"
+        android:textColor="@color/hitam_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_alpha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_alpha"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sekarang"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16"
+        android:fontFamily="@font/poppins"
+        android:text="@string/title_edt_alpha"
+        android:textColor="@color/hitam_200"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alpha" />
+
+    <EditText
+        android:id="@+id/edtAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16"
+        android:background="@drawable/bg_edt"
+        android:hint="@string/hint_alpha"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/size_16"
+        android:textColor="@color/hitam_500"
+        android:textColorHighlight="@color/hitam_200"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_200"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginEnd="@dimen/size_16"
+        android:text="@string/simpan_nilai_parameter_alpha"
+        android:textColor="@color/white"
+        android:padding="@dimen/size_12"
+        android:radius="10dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintCircleRadius="@dimen/size_16"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAlpha"
+        app:layout_constraintVertical_bias="0.869" />
+</androidx.constraintlayout.widget.ConstraintLayout>

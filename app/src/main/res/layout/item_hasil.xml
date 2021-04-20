@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.ses.SesHitungFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/no"
+            android:textColor="@color/hitam_200"
+            />
+
+        <TextView
+            android:id="@+id/tv_tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/poppins"
+            android:text="@string/tahun"
+            android:textColor="@color/hitam_200" />
+
+        <TextView
+            android:id="@+id/tv_bulan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/poppins"
+            android:text="@string/bulan"
+            android:textColor="@color/hitam_200"
+            />
+
+        <TextView
+            android:id="@+id/tv_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/poppins"
+            android:text="@string/at"
+            android:textColor="@color/hitam_200"
+            />
+
+        <TextView
+            android:id="@+id/tv_ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/poppins"
+            android:text="@string/hasil_forecast_ft"
+            android:textColor="@color/hitam_200"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hitam_200"
+        />
+</LinearLayout>

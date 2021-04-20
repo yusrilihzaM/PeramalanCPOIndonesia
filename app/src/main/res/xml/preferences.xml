@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+
+
+    <PreferenceCategory
+        android:key="Settings_app_category"
+        android:title="@string/settings_app"
+        android:layout="@layout/setting_preference_text_view"
+       >
+
+        <Preference
+            android:icon="@drawable/ic_baseline_language_24"
+            android:key="@string/key_localization"
+            android:summary="@string/summary"
+            android:title="@string/change_language" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="about"
+        android:title="Tentang"
+        android:layout="@layout/setting_preference_text_view"
+        >
+
+        <Preference
+            android:icon="@drawable/ic_baseline_info_24"
+            android:key="@string/key_about"
+            android:title="Tentang Aplikasi" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

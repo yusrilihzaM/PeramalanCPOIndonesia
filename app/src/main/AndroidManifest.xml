@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yusril.kpperamalan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KPPeramalan">
+        <activity android:name=".activity.tentang.TentangActivity"></activity>
+        <activity android:name=".activity.des.InputRamalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yusril.kpperamalan.activity.des.DesActivity" />
+        </activity>
+        <activity android:name=".activity.dataminyak.DataDetailActivity" />
+        <activity android:name=".activity.dataminyak.AddDataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yusril.kpperamalan.activity.dataminyak.DataMinyakActivity" />
+        </activity>
+        <activity android:name=".activity.ses.SesActivity" />
+        <activity android:name=".activity.des.DesActivity" />
+        <activity android:name=".activity.alpha.AlphaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yusril.kpperamalan.activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yusril.kpperamalan.activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.dataminyak.DataMinyakActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
